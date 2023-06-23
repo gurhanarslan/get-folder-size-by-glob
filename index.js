@@ -10,7 +10,6 @@ function getFolderSizeByGlob(folder, { ignorePattern: array }) {
     });
     let totalSize = 0;
     filePaths.forEach((file) => {
-        console.log('file', file);
         const stat = fs.statSync(file);
         totalSize += stat.size;
     });
