@@ -1,6 +1,7 @@
 const glob = require('glob');
 const fs = require('fs');
 
+// added comment line.
 function getFolderSizeByGlob(folder, { ignorePattern: array }) {
     const filePaths = glob.sync('**', { // "**" means you search on the whole folder
         cwd: folder, // folder path 
